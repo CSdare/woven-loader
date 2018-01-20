@@ -1,0 +1,22 @@
+{
+  "name": "woven-loader",
+  "version": "1.0.0",
+  "description": "woven webpack loader",
+  "main": "woven-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSdare/woven-loader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSdare/woven-loader/issues"
+  },
+  "homepage": "https://github.com/CSdare/woven-loader#readme",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  }
+}
