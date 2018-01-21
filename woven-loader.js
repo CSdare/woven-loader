@@ -14,11 +14,11 @@ module.exports = function(source, map) {
   });
 
   const funcHash = `const funcHash = {${[...exportedFuncs]}};\n`;
-  const funcCall = `const output = e.data[functionName](payload);\n`;
-  const postMessage = 'postmessage(output);\n';
+  const funcCall = `const output = funcHash[e.data.funcName](e.data.payload);\n`;
+  const postMessage = 'postMessage(output);\n';
   
   source = source.replace(getExports, '');
-  source = 'onmessage = (e) => {' + funcHash + source + funcCall + postMessage + '};';
+  source = 'onmessage = (e) => {' + source + funcHash + funcCall + postMessage + '};';
 
   this.callback(null, source, map);
 };
