@@ -1,8 +1,7 @@
 # woven-loader
 Webpack Loader for WovenJS
-***
+
 woven-loader works in concert with Webpack's worker-loader to convert pure functions written for node into web workers. Optionally the files then get converted to BLOBs that get attached to your bundle and triggered by WovenJS's run() function.
-***
 ## Installing
 ```
 npm install --save-dev woven-loader
