@@ -14,7 +14,7 @@ module.exports = function(source, map) {
   });
 
   const funcHash = `const funcHash = {${[...exportedFuncs]}};\n`;
-  const funcCall = `const output = funcHash[e.data.funcName](e.data.payload);\n`;
+  const funcCall = `const output = funcHash[e.data.funcName](...e.data.payload);\n`;
   const postMessage = 'postMessage(output);\n';
   
   source = source.replace(getExports, '');
