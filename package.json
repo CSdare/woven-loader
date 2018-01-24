@@ -1,6 +1,6 @@
 {
   "name": "woven-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "woven webpack loader",
   "main": "woven-loader.js",
   "scripts": {
